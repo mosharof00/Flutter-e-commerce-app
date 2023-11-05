@@ -1,4 +1,3 @@
-import 'package:gameleven/src/DetailPages/detail_page.dart';
 import 'package:gameleven/src/consts/consts.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -230,6 +229,12 @@ class HomeScreen extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: Color(0xff41F0CE),
                   borderRadius: BorderRadius.circular(10),
+                  boxShadow: [
+                    BoxShadow(
+                        color: Colors.black12,
+                        blurRadius: 2,
+                        offset: Offset(0, 10))
+                  ],
                 ),
                 child: Column(
                   children: [
@@ -284,63 +289,75 @@ class HomeScreen extends StatelessWidget {
                 height: 15,
               ),
               Container(
-                child: Container(
-                    // padding: EdgeInsets.all(10),
-                    child: GridView.builder(
-                        physics: NeverScrollableScrollPhysics(),
-                        shrinkWrap: true,
-                        itemCount: 4,
-                        gridDelegate:
-                            const SliverGridDelegateWithFixedCrossAxisCount(
-                                crossAxisCount: 2,
-                                mainAxisSpacing: 10,
-                                crossAxisSpacing: 10,
-                                mainAxisExtent: 220),
-                        itemBuilder: (context, index) {
-                          return Column(
-                            children: [
-                              Image.asset(
-                                catagoriesImages2[index],
-                                height: 120,
-                                width: 170,
-                                fit: BoxFit.contain,
-                              ),
-                              15.heightBox,
-                              Text('Power Bank Water Gold\nSound Box'),
-                              10.heightBox,
-                              Row(
-                                mainAxisAlignment:
-                                    MainAxisAlignment.spaceBetween,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Best Sale Products",
+                    ),
+                    SizedBox(
+                      height: 10,
+                    ),
+                    Container(
+                        // padding: EdgeInsets.all(10),
+                        child: GridView.builder(
+                            physics: NeverScrollableScrollPhysics(),
+                            shrinkWrap: true,
+                            itemCount: 4,
+                            gridDelegate:
+                                const SliverGridDelegateWithFixedCrossAxisCount(
+                                    crossAxisCount: 2,
+                                    mainAxisSpacing: 10,
+                                    crossAxisSpacing: 10,
+                                    mainAxisExtent: 220),
+                            itemBuilder: (context, index) {
+                              return Column(
                                 children: [
-                                  Text(
-                                    '  500.00 SAR',
-                                    style: TextStyle(color: primaryColor),
+                                  Image.asset(
+                                    catagoriesImages2[index],
+                                    height: 120,
+                                    width: 170,
+                                    fit: BoxFit.contain,
                                   ),
-                                  Container(
-                                    height: 26,
-                                    width: 26,
-                                    decoration: BoxDecoration(
-                                        color: Color(0xffF4F4F4),
-                                        shape: BoxShape.circle),
-                                    child: Image.asset(cartIcon),
-                                  )
+                                  15.heightBox,
+                                  Text('Power Bank Water Gold\nSound Box'),
+                                  10.heightBox,
+                                  Row(
+                                    mainAxisAlignment:
+                                        MainAxisAlignment.spaceBetween,
+                                    children: [
+                                      Text(
+                                        '  500.00 SAR',
+                                        style: TextStyle(color: primaryColor),
+                                      ),
+                                      Container(
+                                        height: 26,
+                                        width: 26,
+                                        decoration: BoxDecoration(
+                                            color: Color(0xffF4F4F4),
+                                            shape: BoxShape.circle),
+                                        child: Image.asset(cartIcon),
+                                      )
+                                    ],
+                                  ),
                                 ],
-                              ),
-                            ],
-                          )
-                              .box
-                              .white
-                              .rounded
-                              .clip(Clip.antiAlias)
-                              .outerShadowSm
-                              .make()
-                              .onTap(() {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                    builder: (context) => DetailPage()));
-                          });
-                        })),
+                              )
+                                  .box
+                                  .white
+                                  .rounded
+                                  .clip(Clip.antiAlias)
+                                  .outerShadowSm
+                                  .make()
+                                  .onTap(() {
+                                Navigator.push(
+                                    context,
+                                    MaterialPageRoute(
+                                        builder: (context) => DetailPage()));
+                              });
+                            })),
+                  ],
+                ),
               )
             ],
           ),

@@ -10,3 +10,7 @@ export 'package:gameleven/src/consts/lists.dart';
 export 'package:gameleven/src/HomeScreen/home_screen1.dart';
 export 'package:velocity_x/velocity_x.dart';
 export 'package:get/get.dart';
+export 'package:flutter_rating_bar/flutter_rating_bar.dart';
+export 'package:gameleven/src/DetailPages/custom_bottom_sheet.dart';
+export 'package:gameleven/src/DetailPages/detail_page.dart';
+export 'package:gameleven/src/Navigator/Cart/cart.dart';

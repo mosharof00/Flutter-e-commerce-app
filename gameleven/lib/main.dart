@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gameleven/src/skip_pages/skip_1.dart';
 import 'package:google_fonts/google_fonts.dart';
-import './src/pages.dart';
 
 void main() {
   runApp(const MyApp());
