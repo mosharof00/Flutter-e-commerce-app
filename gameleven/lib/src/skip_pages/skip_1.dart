@@ -1,6 +1,4 @@
 import 'package:gameleven/src/consts/consts.dart';
-import 'package:gameleven/src/HomeScreen/home_screen.dart';
-import 'package:gameleven/src/skip_pages/size_configs.dart';
 
 class Skip1 extends StatefulWidget {
   const Skip1({super.key});
@@ -103,7 +101,7 @@ class _Skip1State extends State<Skip1> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => HomeScreen()));
+                                  builder: (context) => NavigationBarMain()));
                         },
                         child: const Padding(
                           padding: EdgeInsets.only(right: 40),
