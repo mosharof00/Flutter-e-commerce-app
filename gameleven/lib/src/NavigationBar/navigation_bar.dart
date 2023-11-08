@@ -40,7 +40,17 @@ class NavigationBarMain extends StatelessWidget {
       Container(color: parakeet),
       Container(color: blue)
     ];
-    return Scaffold(
+    return
+        //  WillPopScope(
+        //     onWillPop: () async {
+        //       showDialog(
+        //           barrierDismissible: false,
+        //           context: context,
+        //           builder: (context) => exitDialog(context));
+        //       return false;
+        //     },
+        // child:
+        Scaffold(
       body: Column(
         children: [
           Obx(() => Expanded(
@@ -62,5 +72,6 @@ class NavigationBarMain extends StatelessWidget {
         ),
       ),
     );
+    // );
   }
 }

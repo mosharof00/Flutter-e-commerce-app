@@ -12,6 +12,9 @@ const dieles = "assets/images/Dieles.png";
 const offerImage = "assets/images/offer.png";
 const ratingImage = "assets/images/reating.png";
 const buyNowImage = "assets/images/buy_now.png";
+const group442Image = "assets/images/Group 442.png";
+const splashImage = "assets/images/Rectangle 1.png";
+const socialloginImg = "assets/images/sociallogin.png";
 
 // Icons
 const flash = "assets/icons/Ellipse 133.png";

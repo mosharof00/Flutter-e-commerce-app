@@ -27,3 +27,17 @@ const s1 = "Xbox",
     s8 = "Merchandise",
     s9 = "Retro Gaming Consoles",
     s10 = "Pre Owned (Badel)";
+
+const forgotpass = "Forgot Password?";
+
+//Sign up Screen Strings
+const sName = "First Name";
+const sEmail = "Email";
+const sPassword = "Password";
+const sPhoneNumber = "Phone Number";
+
+const sAgree = "I agree to the";
+const sPrivacy = "Privacy Policy";
+const sterms = "and terms & Conditions of Limarket";
+const sAlreadyHaveAccount = "Already Have An Account ?";
+const sSignIn = "Sign In";

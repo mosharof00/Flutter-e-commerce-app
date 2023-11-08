@@ -1,5 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:gameleven/src/skip_pages/skip_1.dart';
+import 'package:gameleven/src/consts/consts.dart';
+
+import 'package:gameleven/src/skip_pages/splash.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 void main() {
@@ -12,12 +13,14 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        title: "Habit App",
+    // Using GetX so, I have to change this Material app to GetMaterialApp
+    return GetMaterialApp(
+        title: "Gameleven",
         theme: ThemeData(
-          textTheme: GoogleFonts.manropeTextTheme(Theme.of(context).textTheme),
-        ),
+            textTheme:
+                GoogleFonts.manropeTextTheme(Theme.of(context).textTheme),
+            scaffoldBackgroundColor: secoundaryColor),
         debugShowCheckedModeBanner: false,
-        home: Skip1());
+        home: const SplashScreen());
   }
 }

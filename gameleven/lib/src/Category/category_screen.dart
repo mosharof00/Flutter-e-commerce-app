@@ -9,6 +9,7 @@ class CategoryScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: secoundaryColor,
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.only(top: 5),
@@ -65,17 +66,44 @@ class CategoryScreen extends StatelessWidget {
                   ),
                   Expanded(
                     flex: 2,
-                    child: Container(
-                      height: 593,
-                      child: Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: ListView.builder(
-                            scrollDirection: Axis.vertical,
-                            itemCount: categorySlist2.length,
-                            itemBuilder: (context, index) {
-                              return CategoryList1(text: categorySlist2[index]);
-                            }),
-                      ),
+                    child: Column(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 20, bottom: 2),
+                          child: Container(
+                              height: 45,
+                              width: 220,
+                              decoration: BoxDecoration(
+                                color: secoundaryColor,
+                                boxShadow: [
+                                  BoxShadow(
+                                      color: Colors.black12,
+                                      blurRadius: 2,
+                                      offset: Offset(0, 3))
+                                ],
+                              ),
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.start,
+                                children: [
+                                  Text("Gaming Device"),
+                                ],
+                              )),
+                        ),
+                        Container(
+                          height: 540,
+                          child: Padding(
+                            padding: const EdgeInsets.only(left: 20),
+                            child: ListView.builder(
+                                scrollDirection: Axis.vertical,
+                                itemCount: categorySlist2.length,
+                                itemBuilder: (context, index) {
+                                  return CategoryList1(
+                                      text: categorySlist2[index]);
+                                }),
+                          ),
+                        ),
+                      ],
                     ),
                   )
                 ],

@@ -12,7 +12,7 @@ class CategoryWodgitS extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 125,
+      height: 121,
       color: color,
       child: Column(children: [
         Expanded(
@@ -49,20 +49,30 @@ class CategoryList1 extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(bottom: 2),
       child: Container(
-        height: 32,
+        height: 50,
+        decoration: BoxDecoration(
+          color: secoundaryColor,
+          boxShadow: [
+            BoxShadow(
+                color: Colors.black12, blurRadius: 2, offset: Offset(0, 3))
+          ],
+        ),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Text(text),
-            Container(
-              height: 32,
-              width: 50,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  Image.asset(categoryLine),
-                  Image.asset(categoryDownArrow)
-                ],
+            Padding(
+              padding: const EdgeInsets.only(right: 15),
+              child: Container(
+                height: 40,
+                width: 35,
+                child: Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    Image.asset(categoryLine),
+                    Image.asset(categoryDownArrow)
+                  ],
+                ),
               ),
             )
           ],

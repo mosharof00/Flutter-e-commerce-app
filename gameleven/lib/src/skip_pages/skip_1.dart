@@ -1,3 +1,4 @@
+import 'package:gameleven/src/auth/Login%20Page/login_screen.dart';
 import 'package:gameleven/src/consts/consts.dart';
 
 class Skip1 extends StatefulWidget {
@@ -79,7 +80,7 @@ class _Skip1State extends State<Skip1> {
               flex: 1,
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 40,
                   ),
                   Row(
@@ -101,7 +102,7 @@ class _Skip1State extends State<Skip1> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => NavigationBarMain()));
+                                  builder: (context) => LoginScreen()));
                         },
                         child: const Padding(
                           padding: EdgeInsets.only(right: 40),

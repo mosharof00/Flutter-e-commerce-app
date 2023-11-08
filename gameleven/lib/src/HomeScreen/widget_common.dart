@@ -160,7 +160,7 @@ class DailyFeatures extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Expanded(
+          const Expanded(
             child: Row(
               children: [
                 Text("Daily Features"),
@@ -179,11 +179,11 @@ class DailyFeatures extends StatelessWidget {
                       decoration: BoxDecoration(
                           color: primaryColor,
                           borderRadius: BorderRadius.circular(5)),
-                      child: Center(
+                      child: const Center(
                         child: Text(
                           'Hot Sales\n50% OFF',
                           style: TextStyle(
-                              color: const Color.fromRGBO(255, 255, 255, 1),
+                              color: Color.fromRGBO(255, 255, 255, 1),
                               fontSize: 13),
                         ),
                       ),
