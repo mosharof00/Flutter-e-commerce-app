@@ -21,14 +21,14 @@ class LoginScreen extends StatelessWidget {
                     children: [
                       InkWell(
                         onTap: () {
-                          Navigator.pop(context);
+                          // Navigator.pop(context);
                         },
                         child: Container(
                           padding: EdgeInsets.all(12),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30)),
-                          child: const Icon(Icons.arrow_back_outlined,
-                              size: 22, color: secoundaryColor),
+                          // child: const Icon(Icons.arrow_back_outlined,
+                          //     size: 22, color: secoundaryColor),
                         ),
                       ),
                       const Text(

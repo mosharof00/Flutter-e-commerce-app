@@ -50,7 +50,7 @@ class CategoryList1 extends StatelessWidget {
       padding: const EdgeInsets.only(bottom: 2),
       child: Container(
         height: 50,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           color: secoundaryColor,
           boxShadow: [
             BoxShadow(

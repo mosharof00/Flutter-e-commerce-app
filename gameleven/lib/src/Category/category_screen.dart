@@ -73,7 +73,7 @@ class CategoryScreen extends StatelessWidget {
                           child: Container(
                               height: 45,
                               width: 220,
-                              decoration: BoxDecoration(
+                              decoration: const BoxDecoration(
                                 color: secoundaryColor,
                                 boxShadow: [
                                   BoxShadow(
@@ -82,7 +82,7 @@ class CategoryScreen extends StatelessWidget {
                                       offset: Offset(0, 3))
                                 ],
                               ),
-                              child: Column(
+                              child: const Column(
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: [

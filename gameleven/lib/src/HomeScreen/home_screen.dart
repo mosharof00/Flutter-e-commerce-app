@@ -38,7 +38,7 @@ class HomeScreen extends StatelessWidget {
                           color: Color(0xffE8E8E8),
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: TextField(
+                        child: const TextField(
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             hintText: 'What would you like to buy?',
@@ -113,12 +113,12 @@ class HomeScreen extends StatelessWidget {
                                       Container(
                                           width: 14,
                                           height: 14,
-                                          child: Icon(
+                                          child: const Icon(
                                             Icons.flash_on,
                                             color: Colors.white,
                                             size: 10,
                                           ),
-                                          decoration: BoxDecoration(
+                                          decoration: const BoxDecoration(
                                               color: Color(0xffD81D4C),
                                               shape: BoxShape.circle)),
                                       Text(
@@ -320,7 +320,7 @@ class HomeScreen extends StatelessWidget {
                                         mainAxisAlignment:
                                             MainAxisAlignment.spaceBetween,
                                         children: [
-                                          Text(
+                                          const Text(
                                             '  500.00 SAR',
                                             style:
                                                 TextStyle(color: primaryColor),

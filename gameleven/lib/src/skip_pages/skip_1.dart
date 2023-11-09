@@ -32,7 +32,7 @@ class _Skip1State extends State<Skip1> {
     // double sizeH = SizeConfig.blockSizeH!;
     double sizeV = SizeConfig.blockSizeV!;
     return Scaffold(
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromRGBO(255, 255, 255, 1),
         body: SafeArea(
             child: Column(
           children: [

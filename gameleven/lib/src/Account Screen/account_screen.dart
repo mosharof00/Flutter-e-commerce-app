@@ -100,58 +100,10 @@ class AccountScreen extends StatelessWidget {
             height: 30,
           ),
           Padding(
-            padding: const EdgeInsets.only(bottom: 2),
-            child: Container(
-              height: 60,
-              width: double.infinity,
-              child: Row(
-                children: [
-                  Container(
-                    height: 45,
-                    width: 45,
-                    padding: EdgeInsets.all(10),
-                    decoration: BoxDecoration(
-                      color: secoundaryColor,
-                      shape: BoxShape.circle,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 5,
-                            spreadRadius: 5)
-                      ],
-                    ),
-                    child: Image.asset(
-                      exitloginIcon,
-                      fit: BoxFit.fitWidth,
-                    ),
-                  ),
-                  SizedBox(
-                    width: 20,
-                  ),
-                  Container(
-                    height: 40,
-                    width: 255,
-                    decoration: BoxDecoration(
-                      color: secoundaryColor,
-                      boxShadow: [
-                        BoxShadow(
-                            color: Colors.black12,
-                            blurRadius: 2,
-                            offset: Offset(0, 5))
-                      ],
-                    ),
-                    child: Align(
-                      alignment: Alignment.centerLeft,
-                      child: Text(
-                        "Logout",
-                        style: TextStyle(color: black),
-                      ),
-                    ),
-                  )
-                ],
-              ),
-            ),
-          )
+            padding: const EdgeInsets.only(left: 20),
+            child: containerCommonAccount(
+                icon: exitloginIcon, text: "Logout", textColor: black),
+          ),
         ],
       ),
     );

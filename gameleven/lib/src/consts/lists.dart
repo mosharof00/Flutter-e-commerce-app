@@ -15,6 +15,8 @@ const catagoriesImages2 = [
   pc,
   mous,
 ];
+
+//Cart list
 const categoryImageLists = [headphones, chair, pc, mous, fullPC];
 
 // Colors lists

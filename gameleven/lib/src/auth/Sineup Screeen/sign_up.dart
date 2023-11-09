@@ -70,10 +70,17 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   Container(
                     height: 385,
                     child: Column(children: [
-                      commonTextField(hintText: sName),
-                      commonTextField(hintText: sEmail),
-                      commonTextField(hintText: sPassword),
-                      commonTextField(hintText: sPhoneNumber),
+                      commonTextField(
+                          hintText: sName,
+                          prefixIcon: Icon(Icons.type_specimen)),
+                      commonTextField(
+                          hintText: sEmail, prefixIcon: Icon(Icons.email)),
+                      commonTextField(
+                          hintText: sPassword,
+                          prefixIcon: Icon(Icons.password)),
+                      commonTextField(
+                          hintText: sPhoneNumber,
+                          prefixIcon: Icon(Icons.phone)),
                       Row(children: [
                         Checkbox(
                             checkColor: primaryColor,

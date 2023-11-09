@@ -18,3 +18,4 @@ export 'package:gameleven/src/skip_pages/size_configs.dart';
 export 'package:gameleven/src/NavigationBar/navigation_bar.dart';
 export 'package:gameleven/src/HomeScreen/home_screen.dart';
 export 'package:gameleven/src/HomeScreen/exit_dialog.dart';
+export 'package:provider/provider.dart';

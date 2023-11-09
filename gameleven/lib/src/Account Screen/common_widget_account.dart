@@ -37,11 +37,14 @@ Widget containerCommonAccount({icon, text, textColor}) {
                     color: Colors.black12, blurRadius: 2, offset: Offset(0, 5))
               ],
             ),
-            child: Align(
-              alignment: Alignment.centerLeft,
-              child: Text(
-                text,
-                style: TextStyle(color: textColor),
+            child: Padding(
+              padding: const EdgeInsets.only(left: 10),
+              child: Align(
+                alignment: Alignment.centerLeft,
+                child: Text(
+                  text,
+                  style: TextStyle(color: textColor),
+                ),
               ),
             ),
           )

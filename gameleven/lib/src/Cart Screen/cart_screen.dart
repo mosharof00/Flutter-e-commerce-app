@@ -13,7 +13,7 @@ class CartScreen extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(
+                  padding: const EdgeInsets.only(
                     right: 30,
                     left: 8,
                   ),
@@ -32,7 +32,7 @@ class CartScreen extends StatelessWidget {
                           child: Icon(Icons.arrow_back_outlined, size: 22),
                         ),
                       ),
-                      Text(
+                      const Text(
                         "Shopping Cart",
                         style: TextStyle(fontSize: 18),
                       ),

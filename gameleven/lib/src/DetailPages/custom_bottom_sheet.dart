@@ -2,8 +2,32 @@ import 'package:gameleven/src/Cart%20Screen/cart_screen.dart';
 import 'package:gameleven/src/Checkout/checkout_info.dart';
 import 'package:gameleven/src/consts/consts.dart';
 
-class CustomBottoSheet extends StatelessWidget {
+class CustomBottoSheet extends StatefulWidget {
   const CustomBottoSheet({super.key});
+
+  @override
+  State<CustomBottoSheet> createState() => _CustomBottoSheetState();
+}
+
+class _CustomBottoSheetState extends State<CustomBottoSheet> {
+  // DbHelper dbHelper = DbHelper();
+
+  List<String> productName = [
+    'Power Bank Water Gold Sound Box',
+    'Mous',
+    'PC Set',
+    'Gaming Chairs',
+    'Total PC Set'
+  ];
+  List<String> produckUnit = [
+    '45000.OOXAF X 1',
+    'Brand',
+    '',
+    'Brand',
+    '45000.OOXAF X 1'
+  ];
+  List<int> productPrice = [5, 000, 1, 000, 60, 000, 7, 000, 90, 000];
+  List<String> productImage = [headphones, chair, pc, mous, fullPC];
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +90,7 @@ class CustomBottoSheet extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       color: Color(0xffEBEBEB),
                                       borderRadius: BorderRadius.circular(5)),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text("+",
                                         style: TextStyle(fontSize: 20)),
                                   ),
@@ -75,7 +99,7 @@ class CustomBottoSheet extends StatelessWidget {
                               Expanded(
                                 child: Container(
                                   width: 25,
-                                  child: Center(
+                                  child: const Center(
                                     child: Text("01",
                                         style: TextStyle(fontSize: 20)),
                                   ),
@@ -87,7 +111,7 @@ class CustomBottoSheet extends StatelessWidget {
                                   decoration: BoxDecoration(
                                       color: Color(0xffEBEBEB),
                                       borderRadius: BorderRadius.circular(5)),
-                                  child: Center(
+                                  child: const Center(
                                     child: Text("--",
                                         style: TextStyle(fontSize: 19)),
                                   ),
@@ -125,7 +149,7 @@ class CustomBottoSheet extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: Color(0xffEBEBEB),
                               borderRadius: BorderRadius.circular(5)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Add to Cart",
                               style: TextStyle(color: Color(0xff989898)),
@@ -142,7 +166,7 @@ class CustomBottoSheet extends StatelessWidget {
                           decoration: BoxDecoration(
                               color: primaryColor,
                               borderRadius: BorderRadius.circular(5)),
-                          child: Center(
+                          child: const Center(
                             child: Text(
                               "Check Out",
                               style: TextStyle(color: secoundaryColor),
