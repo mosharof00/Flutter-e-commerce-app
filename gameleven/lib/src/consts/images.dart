@@ -15,6 +15,7 @@ const buyNowImage = "assets/images/buy_now.png";
 const group442Image = "assets/images/Group 442.png";
 const splashImage = "assets/images/Rectangle 1.png";
 const socialloginImg = "assets/images/sociallogin.png";
+const profileImg = "assets/images/profileScreenshort.png";
 
 // Icons
 const flash = "assets/icons/Ellipse 133.png";

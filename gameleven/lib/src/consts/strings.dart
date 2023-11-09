@@ -41,3 +41,9 @@ const sPrivacy = "Privacy Policy";
 const sterms = "and terms & Conditions of Limarket";
 const sAlreadyHaveAccount = "Already Have An Account ?";
 const sSignIn = "Sign In";
+
+// Account text
+const sOrderDetailes = "Order Details";
+const sEditProfil = "Edit Profil";
+const sAddtess = "Address";
+const sLocaton = "Location";

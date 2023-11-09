@@ -124,7 +124,7 @@ class DetailPage extends StatelessWidget {
             ),
             Container(
               height: 50,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 boxShadow: [
                   BoxShadow(
                       color: Colors.black12,
@@ -289,22 +289,85 @@ class DetailPage extends StatelessWidget {
               height: 70,
               color: secoundaryColor,
               child: Center(
-                child: InkWell(
-                  onTap: () {
-                    showModalBottomSheet(
-                        backgroundColor: Colors.transparent,
-                        context: context,
-                        builder: (context) {
-                          return CustomBottoSheet();
-                        });
-                  },
-                  child: Container(
-                      height: 33,
-                      width: 300,
-                      child: Image.asset(
-                        buyNowImage,
-                        fit: BoxFit.fitWidth,
+                child: Container(
+                  height: 35,
+                  width: 300,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Expanded(child: Image.asset(favoriteIcon)),
+                      Expanded(
+                          child: InkWell(
+                        onTap: () {
+                          showModalBottomSheet(
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return CustomBottoSheet();
+                              });
+                        },
+                        child: Container(
+                          height: 33,
+                          width: 155,
+                          decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(5),
+                              border:
+                                  Border.all(color: primaryColor, width: 1)),
+                          child: Center(
+                            child: Row(
+                              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                              children: [
+                                SizedBox(
+                                  width: 3,
+                                ),
+                                Text(
+                                  "My Cart",
+                                  style: TextStyle(color: primaryColor),
+                                ),
+                                Container(
+                                  width: 30,
+                                  decoration: BoxDecoration(
+                                    color: Color(0xffFF90AC),
+                                    borderRadius: BorderRadius.circular(5),
+                                  ),
+                                  child: Center(
+                                    child: Text("1"),
+                                  ),
+                                )
+                              ],
+                            ),
+                          ),
+                        ),
                       )),
+                      SizedBox(
+                        width: 20,
+                      ),
+                      Expanded(
+                          child: InkWell(
+                        onTap: () {
+                          showModalBottomSheet(
+                              backgroundColor: Colors.transparent,
+                              context: context,
+                              builder: (context) {
+                                return CustomBottoSheet();
+                              });
+                        },
+                        child: Container(
+                          height: 33,
+                          width: 155,
+                          decoration: BoxDecoration(
+                              color: primaryColor,
+                              borderRadius: BorderRadius.circular(5)),
+                          child: Center(
+                            child: Text(
+                              "Buy Now",
+                              style: TextStyle(color: secoundaryColor),
+                            ),
+                          ),
+                        ),
+                      ))
+                    ],
+                  ),
                 ),
               ),
             )

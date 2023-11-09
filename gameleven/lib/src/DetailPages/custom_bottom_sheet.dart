@@ -1,4 +1,5 @@
 import 'package:gameleven/src/Cart%20Screen/cart_screen.dart';
+import 'package:gameleven/src/Checkout/checkout_info.dart';
 import 'package:gameleven/src/consts/consts.dart';
 
 class CustomBottoSheet extends StatelessWidget {
@@ -7,8 +8,8 @@ class CustomBottoSheet extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        padding: EdgeInsets.only(left: 20, right: 20, bottom: 30),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.only(left: 20, right: 20, bottom: 30),
+        decoration: const BoxDecoration(
             color: secoundaryColor,
             borderRadius: BorderRadius.only(
                 topLeft: Radius.circular(20), topRight: Radius.circular(20))),
@@ -104,20 +105,22 @@ class CustomBottoSheet extends StatelessWidget {
             SizedBox(
               height: 30,
             ),
-            InkWell(
-              onTap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => CartScreen()));
-              },
-              child: Container(
-                  height: 60,
-                  child: Center(
-                      child: Container(
-                    height: 35,
-                    child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                      children: [
-                        Container(
+            Container(
+                height: 60,
+                child: Center(
+                    child: Container(
+                  height: 35,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      InkWell(
+                        onTap: () {
+                          Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => CartScreen()));
+                        },
+                        child: Container(
                           width: 150,
                           decoration: BoxDecoration(
                               color: Color(0xffEBEBEB),
@@ -129,7 +132,12 @@ class CustomBottoSheet extends StatelessWidget {
                             ),
                           ),
                         ),
-                        Container(
+                      ),
+                      InkWell(
+                        onTap: () {
+                          Get.to(() => CheckoutInfoScreen());
+                        },
+                        child: Container(
                           width: 150,
                           decoration: BoxDecoration(
                               color: primaryColor,
@@ -140,11 +148,11 @@ class CustomBottoSheet extends StatelessWidget {
                               style: TextStyle(color: secoundaryColor),
                             ),
                           ),
-                        )
-                      ],
-                    ),
-                  ))),
-            )
+                        ),
+                      )
+                    ],
+                  ),
+                )))
           ],
         ));
   }

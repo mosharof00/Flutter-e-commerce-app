@@ -147,7 +147,7 @@ class LoginScreen extends StatelessWidget {
                   text: sAlreadyHaveAccount,
                   style: TextStyle(fontSize: 14, color: black)),
               TextSpan(
-                  text: sSignIn,
+                  text: "Sign up",
                   style: TextStyle(fontSize: 14, color: primaryColor)),
             ])),
           )
