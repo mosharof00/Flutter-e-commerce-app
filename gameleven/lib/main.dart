@@ -3,6 +3,7 @@ import 'package:gameleven/src/consts/consts.dart';
 import 'package:gameleven/src/skip_pages/splash.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+
 void main() {
   runApp(const MyApp());
 }

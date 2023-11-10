@@ -50,7 +50,7 @@ class CategoryScreen extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Container(
-                      height: 593,
+                      height: 560,
                       width: 125,
                       color: secoundaryColor,
                       child: ListView.builder(
@@ -91,7 +91,7 @@ class CategoryScreen extends StatelessWidget {
                               )),
                         ),
                         Container(
-                          height: 540,
+                          height: 510,
                           child: Padding(
                             padding: const EdgeInsets.only(left: 20),
                             child: ListView.builder(
