@@ -7,7 +7,7 @@ class AccountScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffF8F8F8),
+      backgroundColor: const Color(0xffF8F8F8),
       body: Column(
         children: [
           Container(
@@ -15,7 +15,7 @@ class AccountScreen extends StatelessWidget {
             child: Column(
               children: [
                 Padding(
-                  padding: EdgeInsets.only(right: 30, left: 8, top: 40),
+                  padding: const EdgeInsets.only(right: 30, left: 8, top: 40),
                   child: Row(
                     children: [
                       InkWell(
@@ -23,7 +23,7 @@ class AccountScreen extends StatelessWidget {
                           Navigator.pop(context);
                         },
                         child: Container(
-                          padding: EdgeInsets.all(12),
+                          padding: const EdgeInsets.all(12),
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(30)),
                           child: const Icon(Icons.arrow_back_outlined,
@@ -42,10 +42,10 @@ class AccountScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(height: 10),
+          const SizedBox(height: 10),
           Container(
-            height: 120,
-            decoration: BoxDecoration(
+            height: 110,
+            decoration: const BoxDecoration(
               color: secoundaryColor,
               boxShadow: [
                 BoxShadow(
@@ -57,7 +57,7 @@ class AccountScreen extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Container(
-                    height: 120,
+                    height: 110,
                     width: 130,
                     child: Image.asset(
                       profileImg,
@@ -68,12 +68,12 @@ class AccountScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 15),
+          const SizedBox(height: 10),
           Container(
-            padding: EdgeInsets.only(left: 20, right: 20),
+            padding: const EdgeInsets.only(left: 20, right: 20),
             width: double.infinity,
-            height: 320,
-            decoration: BoxDecoration(
+            height: 300,
+            decoration: const BoxDecoration(
               color: secoundaryColor,
               boxShadow: [
                 BoxShadow(
@@ -96,8 +96,8 @@ class AccountScreen extends StatelessWidget {
               ],
             ),
           ),
-          SizedBox(
-            height: 30,
+          const SizedBox(
+            height: 20,
           ),
           Padding(
             padding: const EdgeInsets.only(left: 20),

@@ -1,6 +1,7 @@
 
 import 'package:gameleven/src/consts/consts.dart';
 import 'package:gameleven/src/consts/lists.dart';
+import 'package:gameleven/src/Controller/item_provider.dart';
 
 import '../../consts/consts.dart';
 import '../cart_package.dart';

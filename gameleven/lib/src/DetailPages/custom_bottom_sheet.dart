@@ -1,5 +1,5 @@
-import 'package:gameleven/src/Cart%20Screen/cart_screen.dart';
 import 'package:gameleven/src/Checkout/checkout_info.dart';
+import 'package:gameleven/src/cart_screen/view/cart.dart';
 import 'package:gameleven/src/consts/consts.dart';
 
 class CustomBottoSheet extends StatefulWidget {

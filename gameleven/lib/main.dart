@@ -15,8 +15,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // Using GetX so, I have to change this Material app to GetMaterialApp
-    return ChangeNotifierProvider(
-      create: (_) => CartProvider(),
+    return MultiProvider(
+      providers: [
+        //ChangeNotifierProvider(create: (_) => CartProvider()),
+        ChangeNotifierProvider(create: (_) => ItemProvider()),
+      ],
       child: Builder(builder: (BuildContext context) {
         return GetMaterialApp(
             title: "Gameleven",
