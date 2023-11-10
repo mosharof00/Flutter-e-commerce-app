@@ -142,7 +142,7 @@ class _CustomBottoSheetState extends State<CustomBottoSheet> {
                           Navigator.push(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => CartScreen()));
+                                  builder: (context) => Cart()));
                         },
                         child: Container(
                           width: 150,

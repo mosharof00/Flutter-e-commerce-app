@@ -1,6 +1,5 @@
-import 'package:gameleven/src/Cart%20Screen/cart_provider.dart';
+import 'package:gameleven/src/Controller/item_provider.dart';
 import 'package:gameleven/src/consts/consts.dart';
-
 import 'package:gameleven/src/skip_pages/splash.dart';
 import 'package:google_fonts/google_fonts.dart';
 
