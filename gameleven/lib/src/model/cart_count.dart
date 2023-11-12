@@ -1,5 +1,5 @@
-import 'package:gameleven/src/consts/consts.dart';
 import 'package:gameleven/src/Controller/item_provider.dart';
+import 'package:gameleven/src/consts/consts.dart';
 
 class CartCount extends StatelessWidget {
   dynamic minimizeTap, addTap;

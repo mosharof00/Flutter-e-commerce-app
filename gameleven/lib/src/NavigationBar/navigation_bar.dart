@@ -1,9 +1,10 @@
-
+import 'package:gameleven/src/Cart%20Screen/cart_model.dart';
+import 'package:gameleven/src/Cart%20Screen/cart_screen.dart';
 import 'package:gameleven/src/Category/category_screen.dart';
 import 'package:gameleven/src/Account%20Screen/account_screen.dart';
+import 'package:gameleven/src/cart_screen/view/cart.dart';
 import 'package:gameleven/src/consts/consts.dart';
 import 'package:gameleven/src/skip_pages/wishlist_screen.dart';
-import 'package:gameleven/src/cart_screen/view/cart.dart';
 
 class NavigationBarMain extends StatelessWidget {
   const NavigationBarMain({super.key});
@@ -41,7 +42,7 @@ class NavigationBarMain extends StatelessWidget {
       CategoryScreen(),
       WishlistScreen(),
       HomeScreen(),
-       Cart(),
+      Cart(),
       AccountScreen(),
     ];
     return

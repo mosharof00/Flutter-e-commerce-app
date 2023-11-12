@@ -1,5 +1,6 @@
+import 'package:gameleven/src/Controller/item_provider.dart';
 import 'package:gameleven/src/consts/consts.dart';
-import '../../Controller/item_provider.dart';
+
 class CheckoutButton extends StatefulWidget {
   const CheckoutButton({
     super.key,

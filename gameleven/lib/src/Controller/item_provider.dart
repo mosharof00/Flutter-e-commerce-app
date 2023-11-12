@@ -3,91 +3,100 @@ import 'package:flutter/cupertino.dart';
 class ItemProvider extends ChangeNotifier {
   dynamic itemList = [
     {
-      'id' : 1,
-      'name' : 'Power Bank Water Gold Sound Box',
-      'sub_title' : "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
-      'image' : {
-        'little_size' : 'assets/images/headphone_2.jpg',
-        'big_size' : 'assets/images/headphone_2.jpg'
+      'id': 1,
+      'name': 'Power Bank Water Gold Sound Box',
+      'sub_title':
+          "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
+      'image': {
+        'little_size': 'assets/images/headphone_2.jpg',
+        'big_size': 'assets/images/headphone_2.jpg'
       },
-      'price' : '46,0000.00 XAF',
-      'category' : 'Electronics Device',
-      'subcategory' : 'Gaming Device',
-      'special_price' : 550.00,
-      'details' : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      'specification' : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
+      'price': '46,0000.00 XAF',
+      'category': 'Electronics Device',
+      'subcategory': 'Gaming Device',
+      'special_price': 550.00,
+      'details':
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      'specification':
+          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
       'is_favorite': false,
       'in_cart': false,
       'in_checkout': false,
-      'cart_count' : 1,
+      'cart_count': 1,
     },
     {
-      'id' : 2,
-      'name' : 'Power Bank Water Gold Sound Box',
-      'sub_title' : "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
-      'image' : {
-        'little_size' : 'assets/images/chair.jpg',
-        'big_size' : 'assets/images/chair.jpg'
+      'id': 2,
+      'name': 'Power Bank Water Gold Sound Box',
+      'sub_title':
+          "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
+      'image': {
+        'little_size': 'assets/images/chair.jpg',
+        'big_size': 'assets/images/chair.jpg'
       },
-      'category' : 'Electronics Device',
-      'subcategory' : 'Gaming Device',
-      'price' : '46,0000.00 XAF',
-      'special_price' : 550.00,
-      'details' : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      'specification' : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
+      'category': 'Electronics Device',
+      'subcategory': 'Gaming Device',
+      'price': '46,0000.00 XAF',
+      'special_price': 550.00,
+      'details':
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      'specification':
+          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
       'is_favorite': false,
       'in_cart': false,
       'in_checkout': false,
-      'cart_count' : 1
+      'cart_count': 1
     },
     {
-      'id' : 3,
-      'name' : 'Power Bank Water Gold Sound Box',
-      'sub_title' : "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
-      'image' : {
-        'little_size' : 'assets/images/gaming_pc.png',
-        'big_size' : 'assets/images/gaming_pc.png'
+      'id': 3,
+      'name': 'Power Bank Water Gold Sound Box',
+      'sub_title':
+          "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
+      'image': {
+        'little_size': 'assets/images/gaming_pc.png',
+        'big_size': 'assets/images/gaming_pc.png'
       },
-      'category' : 'Electronics Device',
-      'subcategory' : 'Gaming Device',
-      'price' : '46,0000.00 XAF',
-      'special_price' : 550.00,
-      'details' : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      'specification' : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
+      'category': 'Electronics Device',
+      'subcategory': 'Gaming Device',
+      'price': '46,0000.00 XAF',
+      'special_price': 550.00,
+      'details':
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      'specification':
+          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
       'is_favorite': false,
       'in_cart': false,
       'in_checkout': false,
-      'cart_count' : 1
+      'cart_count': 1
     },
     {
-      'id' : 4,
-      'name' : 'Power Bank Water Gold Sound Box',
-      'sub_title' : "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
-      'image' : {
-        'little_size' : 'assets/images/gaming_mouse.jpg',
-        'big_size' : 'assets/images/gaming_mouse.jpg'
+      'id': 4,
+      'name': 'Power Bank Water Gold Sound Box',
+      'sub_title':
+          "Strategies de Survie des Populations Africaines dans une Economie Mondialisée - L’expérience Camerounaise.",
+      'image': {
+        'little_size': 'assets/images/gaming_mouse.jpg',
+        'big_size': 'assets/images/gaming_mouse.jpg'
       },
-      'category' : 'Electronics Device',
-      'subcategory' : 'Gaming Device',
-      'price' : '46,0000.00 XAF',
-      'special_price' : 550.00,
-      'details' : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
-      'specification' : "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
+      'category': 'Electronics Device',
+      'subcategory': 'Gaming Device',
+      'price': '46,0000.00 XAF',
+      'special_price': 550.00,
+      'details':
+          "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+      'specification':
+          "Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur,",
       'is_favorite': false,
       'in_cart': false,
       'in_checkout': false,
-      'cart_count' : 1
+      'cart_count': 1
     },
   ];
-
-
 
   ///////////////////////////==Filtered by category==////////////////////////
 
   // List<dynamic> filteredProductsByCategory(String category) {
   //   return itemList.where((product) => product['category'] == category).toList();
   // }
-
 
   //
   // List<dynamic> filteredProductsByCategory(String category, String subcategory) {
@@ -119,7 +128,6 @@ class ItemProvider extends ChangeNotifier {
         });
     notifyListeners();
   }
-
 
   void setIsFavorite(index) {
     if (itemList[index]['is_favorite']) {
@@ -168,18 +176,15 @@ class ItemProvider extends ChangeNotifier {
     notifyListeners();
   }
 
-   addItem(index) {
+  addItem(index) {
     itemList[index]['cart_count']++;
     notifyListeners();
   }
 
   void removeItem(index) {
-    itemList[index]['cart_count'] == 1? 1: itemList[index]['cart_count']--;
+    itemList[index]['cart_count'] == 1 ? 1 : itemList[index]['cart_count']--;
     notifyListeners();
   }
-
-
-
 
   ////////////////////==only for checkout==//////////////////////////////////////
 
@@ -190,8 +195,7 @@ class ItemProvider extends ChangeNotifier {
   void checkoutItem(item) {
     if (item['in_checkout']) {
       _checkout.add(item);
-    }
-    else {
+    } else {
       _checkout.remove(item);
     }
     print('this is checkout');
@@ -202,12 +206,11 @@ class ItemProvider extends ChangeNotifier {
 
   void removeFromCheckout(item) {
     _cartList.asMap().forEach((ind, value) => {
-      if (item["id"] == value["id"])
-        {_checkout.remove(item), _cartList[ind]['in_checkout'] = false}
-    });
+          if (item["id"] == value["id"])
+            {_checkout.remove(item), _cartList[ind]['in_checkout'] = false}
+        });
     notifyListeners();
   }
-
 
   void setIsCheckout(index) {
     if (itemList[index]['in_checkout']) {
@@ -227,15 +230,12 @@ class ItemProvider extends ChangeNotifier {
 
   /////////////////////////////===get total of checkout===////////////////////////
   double getTotalPrice() {
-    return _checkout.map((item) =>
-    item['special_price'] * item['cart_count']).fold(0.0, (a, b) => a + b);
+    return _checkout
+        .map((item) => item['special_price'] * item['cart_count'])
+        .fold(0.0, (a, b) => a + b);
   }
 
-  double totalWithAll(){
-    return getTotalPrice() + 1000 ;
+  double totalWithAll() {
+    return getTotalPrice() + 1000;
   }
-
 }
-
-
-
